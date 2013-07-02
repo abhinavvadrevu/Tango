@@ -7,7 +7,14 @@ import smtplib
 def index(request):    
     fromaddr = 'leadtheway.abhinav@gmail.com'  
     toaddrs  = 'avadrevu@twitter.com'  
-    msg = 'Hey you should call me through magic jack if possible!'  
+    msg = """
+Hey dad,
+    I realized that if I don't have internet, and you don't have magic jack plugged in, then I can't call you.
+    So I created this app I'm calling Tango (because it uses Twilio and Django lol).
+    All I do is call a number from my phone.  It then sends you this email, and texts me back to confirm it worked.
+    So if you are getting this message, you should call me through magic jack if possible!
+    Although if this is one of the first few emails, I'm probs just testing it :P
+    """
     # Credentials (if needed)  
     username = 'leadtheway.abhinav'  
     password = 'SL(0fd>?'  
@@ -18,4 +25,4 @@ def index(request):
     server.sendmail(fromaddr, toaddrs, msg)  
     server.quit()  
     sendit.send()
-    return HttpResponse("Hello, world. You're at the poll index.")
+    return HttpResponse("You sent the email!")
