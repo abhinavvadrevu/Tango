@@ -5,7 +5,7 @@ from twilio2 import sendit
 import smtplib  
 
 def index(request):    
-    fromaddr = 'leadtheway.abhinav@gmail.com'  
+    fromaddr = 'vadrevus@gmail.com'  
     toaddrs  = 'avadrevu@twitter.com'  
     msg = """
 Hey dad,
