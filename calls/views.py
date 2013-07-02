@@ -5,8 +5,8 @@ from twilio2 import sendit
 import smtplib  
 
 def index(request):    
-    fromaddr = 'vadrevus@gmail.com'  
-    toaddrs  = 'avadrevu@twitter.com'  
+    fromaddr = 'leadtheway.abhinav@gmail.com'  
+    toaddrs  = 'vadrevus@gmail.com'  
     msg = """
 Hey dad,
     I realized that if I don't have internet, and you don't have magic jack plugged in, then I can't call you.
