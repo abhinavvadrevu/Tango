@@ -17,7 +17,7 @@ Hey dad,
     """
     # Credentials (if needed)  
     username = 'leadtheway.abhinav'  
-    password = 'SL(0fd>?'  
+    password = ''  
     # The actual mail send  
     server = smtplib.SMTP('smtp.gmail.com:587')  
     server.starttls()  
